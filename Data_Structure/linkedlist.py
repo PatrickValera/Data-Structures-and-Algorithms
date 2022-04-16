@@ -1,6 +1,9 @@
-# Insertion O(1)
-# Deletion O(1)
+# Insertion/Deletion at Start O(1)
+# Insertion anywhere else O(N)
 # Insert at end O(n)
+
+#  X = Done
+#  T = Trivial; did not implement
 
 #  [X] size() - returns number of data elements in list
 #  [X] empty() - bool returns true if empty
@@ -13,9 +16,9 @@
 #  [T] back() - get value of end item
 #  [X] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
 #  [X] erase(index) - removes node at given index
-#  [] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
+#  [X] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
 #  [X] reverse() - reverses the list
-#  [] remove_value(value) - removes the first item in the list with this value
+#  [X] remove_value(value) - removes the first item in the list with this value
 class Node:
     def __init__ (self,data=None,next=None):
         self.next=next
@@ -40,6 +43,9 @@ class LinkedList:
             return True
 
     def value_at_index(self,index):
+        if index > self.size()-1:
+            print('index out of bounds')
+            return
         cntr=0
         itr=self.head
         while cntr != index:
@@ -48,6 +54,8 @@ class LinkedList:
         return itr.data
 
     def pop_front(self):
+        if self.head is None:
+            return
         val=self.head.data
         self.head=self.head.next
         return val
@@ -62,15 +70,18 @@ class LinkedList:
         itr.next=new_node
 
     def erase(self,index):
-        return
-        # cntr=0
-        # prev=None
-        # itr=self.head
-        # next=None
-        # while cntr!=index:
-        #     cntr+=1
-        #     itr=itr.next
-        # itr.next=itr.next.next
+        if index==0:
+            self.head=self.head.next
+            return
+        cntr=0
+        prev=None
+        curr=self.head
+        while curr is not None and cntr!=index:
+            prev=curr
+            curr=curr.next
+            cntr+=1
+        prev.next=curr.next
+      
 
     def reverse(self):
         prev=None
@@ -91,6 +102,16 @@ class LinkedList:
                 itr=itr.next
                 cntr+=1
             self.erase(cntr)
+
+    def value_n_from_end(self,index):
+        if self.head is None:
+            return None
+        cntr=0
+        itr=self.head
+        while itr is not None and cntr!=self.size()-1-index:
+            cntr+=1
+            itr=itr.next
+        return itr.data
 
     def insert_at_start(self,data):
         new_node = Node(data,self.head)
@@ -119,9 +140,11 @@ list.insert_at_start(1)
 list.insert_at_end(3)
 list.insert_at_end(4)
 list.insert(2,1)
-# list.erase(3)
+# list.erase(list.size()-1)
 # list.reverse()
-list.remove_value(1)
+# list.remove_value(1)
+
+# print(list.value_n_from_end(3))
 list.print_list()
 print('empty:',list.empty())
 print('size:',list.size())
