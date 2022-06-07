@@ -137,6 +137,8 @@ class LinkedList:
 
 if __name__ == "__main__":
     list=LinkedList()
+    ptr=list
+    print(type(ptr))
     list.insert_at_start(1)
     list.insert_at_end(3)
     list.insert_at_end(4)
