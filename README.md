@@ -1,0 +1,59 @@
+### Topics of Study for SWE / Checklist
+- [X] Algorithmic complexity / Big-O / Asymptotic analysis
+- [X] Data Structures (Python)
+    - [X] Arrays
+    - [X] Linked Lists
+    - [X] Stack
+    - [X] Queue
+    - [X] Hash table
+- [] Data Structures (C++)
+    - [] Arrays
+    - [] Linked Lists
+    - [] Stack
+    - [] Queue
+    - [] Hash table
+- [] More Knowledge
+    - [] Binary search
+    - [] Bitwise operations
+- [] Trees
+    - [] Trees - Notes & Background
+    - [] Binary search trees: BSTs
+    - [] Heap / Priority Queue / Binary Heap
+    - [] balanced search trees (general concept, not details)
+    - [] traversals: preorder, inorder, postorder, BFS, DFS
+- []Sorting
+    - [] selection
+    - [] insertion
+    - [] heapsort
+    - [] quicksort
+    - [] merge sort
+- [] Graphs
+    - [] directed
+    - [] undirected
+    - [] adjacency matrix
+    - [] adjacency list
+    - [] traversals: BFS, DFS
+- [] Even More Knowledge
+    - [] Recursion
+    - [] Dynamic Programming
+    - [] Design Patterns
+    - [] Combinatorics (n choose k) & Probability
+    - [] NP, NP-Complete and Approximation Algorithms
+    - [] How computers process a program
+    - [] Caches
+    - [] Processes and Threads
+    - [] Testing
+    - [] String searching & manipulations
+    - [] Tries
+    - [] Floating Point Numbers
+    - [] Unicode
+    - [] Endianness
+    - [] Networking
+- [] Final Review
+- [] Getting the Job
+    - [] Update Your Resume
+    - [] Find a Job
+    - [] Interview Process & General Interview Prep
+    - [] Be thinking of for when the interview comes
+    - [] Have questions for the interviewer
+    - [] Once You've Got The Job
