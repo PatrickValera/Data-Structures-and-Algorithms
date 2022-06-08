@@ -1,0 +1,6 @@
+- [] Trees
+    - [] Trees - Notes & Background
+    - [] Binary search trees: BSTs
+    - [] Heap / Priority Queue / Binary Heap
+    - [] balanced search trees (general concept, not details)
+    - [] traversals: preorder, inorder, postorder, BFS, DFS
