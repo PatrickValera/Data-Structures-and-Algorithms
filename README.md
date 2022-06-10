@@ -16,7 +16,7 @@
     - [X] Binary search
     - [X] Bitwise operations
 - [ ] Trees
-    - [ ] Trees - Notes & Background
+    - [X] Trees - Notes & Background
     - [ ] Binary search trees: BSTs
     - [ ] Heap / Priority Queue / Binary Heap
     - [ ] balanced search trees (general concept, not details)
