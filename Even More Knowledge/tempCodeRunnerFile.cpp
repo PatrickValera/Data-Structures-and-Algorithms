@@ -1,0 +1,1 @@
+1 + get_number_in_line(person->next_in_line)
